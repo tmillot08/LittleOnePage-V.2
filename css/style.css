@@ -8,11 +8,13 @@
   text-align: center;
 }
 
+nav{
+  position: sticky;
+  top: 0;
+}
 ul {
     list-style-type: none;
     height: 60px;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color:#ff3333;
     border: 1px solid white;
