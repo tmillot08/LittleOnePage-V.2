@@ -31,7 +31,8 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding:0px 16px 0px 16px;
+    line-height: 60px;
     text-decoration: none;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 2.2rem;
@@ -151,7 +152,8 @@ input{
   height: 50px;
   color: grey;
   position:relative;
-  padding-bottom: 130px;
+  padding-bottom: 110px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -186,6 +188,11 @@ textarea{
   border-style: none;
 }
 
+textarea::placeholder{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2.0rem;
+  line-height: 40px;
+}
 .submit:hover{
   cursor: pointer;
 }
