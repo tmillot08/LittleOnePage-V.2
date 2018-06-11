@@ -18,10 +18,23 @@ $(document).ready(function() {
 			$('#10').removeClass("center")
 			$('#10').addClass("center2")
 
-		} else if (windowpos >= 600 & windowpos <= 1200) {
+		} else if (windowpos >= 600 & windowpos <= 2000) {
 			$('#6').addClass("hide")
       $('#7').removeClass("hide")
-    }
+    } else{
+			s.removeClass("reduc")
+			s.addClass("slide")
+			$('#6').addClass("hide")
+			$('#5').addClass("hide")
+			$('#7').addClass("hide")
+			$('#1').removeClass("hide")
+			$('#2').removeClass("hide")
+			$('#3').removeClass("hide")
+			$('#4').removeClass("hide")
+			$('#10').removeClass("center2")
+			$('#10').addClass("center")
+
+		}
 	});
 });
 
