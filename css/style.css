@@ -1,3 +1,21 @@
+.sticky{
+    position: sticky !important;
+    top: 0;
+    opacity: 0.8;
+    z-index: 99;
+}
+
+/*.reduc{
+  top:0 !important;
+  transform: scaleY(0.8);
+}
+.reducb{
+  transform: scaleY(0.6);
+}
+
+.reducc{
+  transform: scaleY(0.4);
+}*/
 
 #ban{
   overflow: hidden;
@@ -324,7 +342,6 @@ i{
     width: 25px;
     height: 25px;
   }
-
 
 
   textarea{
