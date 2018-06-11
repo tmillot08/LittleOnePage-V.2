@@ -1,16 +1,26 @@
 $(document).ready(function() {
-	var s = $("#ban");
+	var s = $(".cc");
 	var pos = s.position();
 	$(window).scroll(function() {
 		var windowpos = $(window).scrollTop();
 		if (windowpos >= 50 & windowpos <= 400) {
+			s.removeClass("slide")
 			s.addClass("reduc");
-		} else if (windowpos >= 400 & windowpos <= 800) {
-			s.removeClass("reduc");
-      s.addClass("reducb");
-		} else if (windowpos >= 800 & windowpos <= 1200) {
-      s.removeClass("reducb");
-      s.addClass("reducc");
+			$('#1').addClass("hide")
+			$('#2').addClass("hide")
+			$('#3').addClass("hide")
+			$('#4').addClass("hide")
+			$('#5').removeClass("hide")
+
+		} else if (windowpos >= 400 & windowpos <= 600) {
+			$('#5').addClass("hide")
+      $('#6').removeClass("hide")
+			$('#10').removeClass("center")
+			$('#10').addClass("center2")
+
+		} else if (windowpos >= 600 & windowpos <= 1200) {
+			$('#6').addClass("hide")
+      $('#7').removeClass("hide")
     }
 	});
 });

@@ -1,27 +1,28 @@
 .sticky{
     position: sticky !important;
     top: 0;
-    opacity: 0.8;
     z-index: 99;
 }
 
-/*.reduc{
-  top:0 !important;
-  transform: scaleY(0.8);
-}
-.reducb{
-  transform: scaleY(0.6);
+.reduc{
+  position: relative;
+  width: 400%;
+  margin: auto;
+  margin:0;
+  left:0;
 }
 
-.reducc{
-  transform: scaleY(0.4);
-}*/
+
+
+.hide{
+  display: none;
+}
 
 #ban{
   overflow: hidden;
 }
 
-#ban figure{
+#ban .slide{
   position: relative;
   width: 400%;
   margin:0;
@@ -29,7 +30,7 @@
   animation: 20s slider infinite;
 }
 #ban figure img{
-  width: 25% !important;
+  width: 25%;
   float: left;
 
 }
@@ -74,9 +75,19 @@ li a:hover{
     background-color: black;
 }
 
+.center2{
+  width: 100%;
+  max-height: 300px;
+  display: flex;
+  text-align:center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+
+}
 .center{
   width: 100%;
-  padding-top:100px;
+  padding-top:80px;
   max-height: 300px;
   display: flex;
   text-align:center;
